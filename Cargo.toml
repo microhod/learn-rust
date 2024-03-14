@@ -6,4 +6,5 @@ members = [
     "projects/variables",
     "projects/data_types",
     "projects/control_flow",
+    "projects/temperature_conversion"
 ]

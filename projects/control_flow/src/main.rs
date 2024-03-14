@@ -3,6 +3,7 @@ use std::{
     num::ParseIntError,
 };
 
+// https://doc.rust-lang.org/book/ch03-05-control-flow.html
 fn main() -> Result<(), String> {
     // we have for loops
     for number in (1..4).rev() {

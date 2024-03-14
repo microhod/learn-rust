@@ -3,14 +3,14 @@ use std::cmp::Ordering;
 use std::io::{self, Write};
 
 fn main() -> Result<(), String> {
-    println!("guess the number!");
+    println!("🤨 guess the number!");
 
     let secret_number = generate_number();
-    println!("the secret number is {secret_number}");
+    println!("🤫 the secret number is {secret_number} (shh don't tell anyone)");
 
     loop {
         let guess;
-        match read_guess("please input your guess:") {
+        match read_guess("👋 please input your guess:") {
             Ok(number) => guess = number,
             Err(err) => return Err(err),
         }
@@ -18,16 +18,16 @@ fn main() -> Result<(), String> {
         let guess = match guess.parse::<u32>() {
             Ok(num) => num,
             Err(_) => {
-                println!("please input a positive integer");
+                println!("🚫 please input a positive integer");
                 continue;
             }
         };
 
         match guess.cmp(&secret_number) {
-            Ordering::Less => println!("too low"),
-            Ordering::Greater => println!("too high"),
+            Ordering::Less => println!("⬆️  too low"),
+            Ordering::Greater => println!("⬇️  too high"),
             Ordering::Equal => {
-                println!("you win!");
+                println!("🎉 you win!");
                 break
             },
         }

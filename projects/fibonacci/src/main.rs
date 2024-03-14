@@ -1,5 +1,6 @@
 use std::{io::{self, Write}, num::ParseIntError};
 
+// https://doc.rust-lang.org/book/ch03-05-control-flow.html
 fn main() -> Result<(),String> {
     let n = match read_number("input the required fibonacci number") {
         Ok(num) => num,

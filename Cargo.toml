@@ -3,4 +3,6 @@ resolver = "2"
 members = [
     "projects/hello_cargo",
     "projects/guessing_game",
+    "projects/variables",
+    "projects/data_types",
 ]

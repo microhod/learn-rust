@@ -5,4 +5,5 @@ members = [
     "projects/guessing_game",
     "projects/variables",
     "projects/data_types",
+    "projects/control_flow",
 ]

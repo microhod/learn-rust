@@ -12,4 +12,5 @@ members = [
     "projects/ownership",
     "projects/borrowing",
     "projects/slices",
+    "projects/structs",
 ]

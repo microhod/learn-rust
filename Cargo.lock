@@ -97,6 +97,10 @@ name = "slices"
 version = "0.1.0"
 
 [[package]]
+name = "structs"
+version = "0.1.0"
+
+[[package]]
 name = "temperature_conversion"
 version = "0.1.0"
 

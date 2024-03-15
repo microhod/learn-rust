@@ -9,4 +9,5 @@ members = [
     "projects/temperature_conversion",
     "projects/fibonacci",
     "projects/twelve_days_of_christmas",
+    "projects/ownership",
 ]

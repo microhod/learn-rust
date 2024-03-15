@@ -11,4 +11,5 @@ members = [
     "projects/twelve_days_of_christmas",
     "projects/ownership",
     "projects/borrowing",
+    "projects/slices",
 ]

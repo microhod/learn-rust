@@ -1,3 +1,4 @@
+// https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
 fn main() {
     stack_copy();
     heap_clone();
@@ -15,12 +16,11 @@ fn main() {
 fn stack_copy() {
     let x = 5;
 
-    // these two lines are equivalent, doing a trivial copy of data on the stack
+    // doing a trivial copy of data on the stack
     // stack allocated variables use the Copy trait
     let y = x;
-    let z = x.clone();
 
-    println!("x = {}, y = {}, z = {}", x, y, z);
+    println!("x = {}, y = {}", x, y);
 }
 
 fn heap_clone() {
